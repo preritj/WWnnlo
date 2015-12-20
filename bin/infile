@@ -1,0 +1,7 @@
+13000							# sqrt(S) : CoM energy 
+MSTW2008nnlo90cl_nf4.LHgrid 	# PDF set
+0								# PDF set member
+4								# Nf : number of flavors
+25.								# pT veto
+25.								# mu_r = mu_f : scale
+0.4								# R : jet radius
