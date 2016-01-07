@@ -18,22 +18,19 @@ export LD_LIBRARY_PATH = $HOME/Apps/gsl/Install/lib : $HOME/Apps/LHAPDF/Install/
 
 followed by 
 
-source ~/.bashrc 
+    source ~/.bashrc 
 
 ----------------------------------------------------------------- 
 
 To compile, do : 
-
-  make 
+    make 
 
 ----------------------------------------------------------------- 
 
 
 To recompile everything from scratch, do : 
-
-  make clean 
-  
-  make 
+    make clean 
+    make 
 
 
 
@@ -45,5 +42,5 @@ To run the program after compilation, go to directory bin
 
 Edit input file 'infile', and then do : 
 
-./Beam < infile
+    ./Beam < infile
 
