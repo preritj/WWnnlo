@@ -12,9 +12,8 @@ while $LD_LIBRARY_PATH variable should include 'lib' directories of gsl and lhap
 
 This can be implemented by adding following lines in ~/.bashrc : 
 
-export PATH = $HOME/Apps/gsl/Install/bin : $HOME/Apps/LHAPDF/Install/bin : $PATH 
-
-export LD_LIBRARY_PATH = $HOME/Apps/gsl/Install/lib : $HOME/Apps/LHAPDF/Install/lib : $LD_LIBRARY_PATH 
+    export PATH = $HOME/Apps/gsl/Install/bin : $HOME/Apps/LHAPDF/Install/bin : $PATH 
+    export LD_LIBRARY_PATH = $HOME/Apps/gsl/Install/lib : $HOME/Apps/LHAPDF/Install/lib : $LD_LIBRARY_PATH 
 
 followed by 
 
@@ -22,13 +21,15 @@ followed by
 
 ----------------------------------------------------------------- 
 
-To compile, do : 
+To compile, do :
+
     make 
 
 ----------------------------------------------------------------- 
 
 
 To recompile everything from scratch, do : 
+
     make clean 
     make 
 
