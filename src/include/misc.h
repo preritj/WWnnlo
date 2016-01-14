@@ -1,5 +1,6 @@
-//  timer class
 #include <time.h> 
+
+//  timer class
 class timer
 {
 	private :

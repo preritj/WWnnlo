@@ -8,10 +8,11 @@ FC = gfortran
 CFLAGS = -I$(IDIR) `gsl-config --cflags` 
 LDFLAGS = `gsl-config --libs` `lhapdf-config --ldflags`
 
-VPATH = $(SDIR)/User  : \
-		$(SDIR)/PDF   : \
-		$(SDIR)/Beam  : \
-		$(SDIR)/Misc  : \
+VPATH = $(SDIR)/User  	: \
+		$(SDIR)/PDF   	: \
+		$(SDIR)/Beam  	: \
+		$(SDIR)/Misc  	: \
+		$(SDIR)/include : 
 		 
 
 USERfiles= \
@@ -36,11 +37,13 @@ MISCfiles= \
 timer.o 
 
 
-HEADERS =\
+DEPS =\
 const.h \
+anom_dim.h \
 functions.h \
 Beam.h \
 misc.h
+
 
 ALLfiles = $(USERfiles) \
 		   $(BEAMfiles) \
@@ -51,15 +54,14 @@ OBJ = $(patsubst %,$(ODIR)/%, $(ALLfiles))
 
 DY :  $(OBJ) $(patsubst %,$(ODIR)/%, $(DYfiles))
 	g++ -o $@ $^  $(CFLAGS) $(LDFLAGS)
-	mv DY bin/ 
-	  
+	mv DY bin/ 	  
 
 beam:  $(OBJ)
 	g++ -o $@ $^  $(CFLAGS) $(LDFLAGS)
 	mv beam bin/ 
 
-$(ODIR)/%.o :  %.cc $(DEP)
-	$(CC) -c -o $@ $< $(CFLAGS) 
+$(ODIR)/%.o :  %.cc $(DEPS) 
+	$(CC) $(CFLAGS) -c -o $@ $< 
 
 $(ODIR)/PDF.o: PDF.F
 	$(FC) -c -o $@ $<

@@ -1,3 +1,6 @@
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
+
 // PDF functions 
 void evolvePDF(double , double , double* );
 double alpha_s (double);
@@ -13,3 +16,4 @@ extern "C"
  double alphaspdf_(double&) ;
 }
 
+#endif

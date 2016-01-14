@@ -1,3 +1,6 @@
+#ifndef BEAM_H
+#define BEAM_H
+
 struct BeamPara{
 	double ECM;		 // CoM energy
 	double pTveto;   // pT-veto
@@ -8,7 +11,6 @@ struct BeamPara{
 	int Nf; 		 // number of flavors 
 	char flavor; 	 // flavor type : either 'u' or 'd' 
 };
-
 
 struct zPara{
 	double pTveto;   // pT-veto
@@ -21,7 +23,7 @@ struct zPara{
 };
 
 struct flav{
-	double u, d;
+	double u, d;	 // up and down type
 };
 
 class Beam{
@@ -48,3 +50,5 @@ struct Dist{
 Dist Iqfromq(double , double );
 Dist Iqfromg(double , double );
 double PlusRem(double);
+
+#endif
