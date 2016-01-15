@@ -1,6 +1,10 @@
 #ifndef BEAM_H
 #define BEAM_H
 
+#include "flavor.h"
+#include "input.h"
+#include "dist.h"
+
 struct BeamPara{
 	double ECM;		 // CoM energy
 	double pTveto;   // pT-veto
@@ -22,33 +26,18 @@ struct zPara{
 	int flag;		 // relevant for z integration 
 };
 
-struct flav{
-	double u, d;	 // up and down type
-};
-
 class Beam{
 	private : 
 		BeamPara para;
 		double as, xsNNLO ;
 	public : 
-		Beam();
+		Beam(InputPara);
+		void set_mu(double);
 		flav lo(double), nlo(double) ;
 };
 
 double integrand_rap_lo(double, void*);
 double integrand_rap_nlo(double, void*);
 double integrand_z(double, void*);
-
-struct Dist{
-	friend Dist operator+(const Dist&, const Dist&) ;
-	friend Dist operator*(const Dist&, double) ;
-	Dist(){ None=0.; Plus=0.; Delta=0.;}
-	double None, Plus, Delta;
-};
-
-
-Dist Iqfromq(double , double );
-Dist Iqfromg(double , double );
-double PlusRem(double);
 
 #endif

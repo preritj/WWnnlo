@@ -11,6 +11,7 @@ LDFLAGS = `gsl-config --libs` `lhapdf-config --ldflags`
 VPATH = $(SDIR)/User  	: \
 		$(SDIR)/PDF   	: \
 		$(SDIR)/Beam  	: \
+		$(SDIR)/Hard  	: \
 		$(SDIR)/Misc  	: \
 		$(SDIR)/include : 
 		 
@@ -33,13 +34,20 @@ KernelNLO.o \
 zIntegration.o \
 integration.o 
 
+HARDfiles= \
+HardInit.o
+
 MISCfiles= \
+ReadInput.o \
 timer.o 
 
 
 DEPS =\
+input.h \
 const.h \
 anom_dim.h \
+dist.h \
+flavor.h \
 functions.h \
 Beam.h \
 misc.h
@@ -47,6 +55,7 @@ misc.h
 
 ALLfiles = $(USERfiles) \
 		   $(BEAMfiles) \
+		   $(HARDfiles) \
 		   $(PDFfiles) \
            $(MISCfiles) 
 

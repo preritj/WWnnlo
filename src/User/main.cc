@@ -10,6 +10,7 @@
 #include <misc.h>
 #include <functions.h>
 #include <Beam.h>
+#include <input.h>
 
 using namespace std;
 
@@ -24,7 +25,8 @@ int main (void)
 	// User code goes here
 	//------------------------------------------------------- 
 	double M = 500. ;
-	Beam B;
+	ReadInput input;
+	Beam B(input.para()) ;
 	cout << "Invarian mass of lepton pair " << M << endl ;
 	cout << "Beam-up LO " << B.lo(500).u << endl;  
 	cout << "Beam-down LO " << B.lo(500).d << endl;  
