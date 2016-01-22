@@ -26,6 +26,11 @@ PDF.o
 DYfiles= \
 HardFn.o 
 
+WWfiles= \
+WW.o \
+LO.o \
+HardFn.o 
+
 BEAMfiles= \
 BeamInit.o \
 BeamLO.o \
@@ -35,7 +40,8 @@ zIntegration.o \
 integration.o 
 
 HARDfiles= \
-HardInit.o
+HardInit.o \
+anom_dim.o
 
 MISCfiles= \
 ReadInput.o \
@@ -45,10 +51,9 @@ timer.o
 DEPS =\
 input.h \
 const.h \
-anom_dim.h \
 dist.h \
 flavor.h \
-functions.h \
+PDF.h \
 Beam.h \
 misc.h
 
@@ -60,6 +65,13 @@ ALLfiles = $(USERfiles) \
            $(MISCfiles) 
 
 OBJ = $(patsubst %,$(ODIR)/%, $(ALLfiles))
+
+VPATH+= $(SDIR)/WW
+DEPS+= WW.h
+WW :  $(OBJ) $(patsubst %,$(ODIR)/%, $(WWfiles))
+	g++ -o $@ $^  $(CFLAGS) $(LDFLAGS)
+	mv WW bin/ 	 
+	
 
 DY :  $(OBJ) $(patsubst %,$(ODIR)/%, $(DYfiles))
 	g++ -o $@ $^  $(CFLAGS) $(LDFLAGS)
@@ -76,5 +88,5 @@ $(ODIR)/PDF.o: PDF.F
 	$(FC) -c -o $@ $<
 
 clean : 
-	rm -f $(OBJ) bin/beam bin/DY
+	rm -f $(OBJ) bin/beam bin/DY bin/WW
 

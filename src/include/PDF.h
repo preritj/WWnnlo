@@ -1,12 +1,10 @@
-#ifndef FUNCTIONS_H
-#define FUNCTIONS_H
+#ifndef PDF_H
+#define PDF_H
 
 // PDF functions 
 void evolvePDF(double , double , double* );
 double alpha_s (double);
 
-// Hard functions
-double H1(double, double) ;
 
 //Linking to PDFs (Fortran code for lhapdf) 
 extern "C" 

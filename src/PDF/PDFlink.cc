@@ -1,5 +1,5 @@
 #include <math.h>
-#include <functions.h>
+#include <PDF.h>
 
 // Returns PDF in f
 void evolvePDF(double x, double Q, double* f)

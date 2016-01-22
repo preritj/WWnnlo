@@ -6,11 +6,8 @@ struct InputPara{
 	double pTveto;   	 // pT-veto
 	double R; 			 // jet radius
 	int Nf; 			 // number of flavors 
-	const char* PDFname; // PDF name
-	int mem ;		 // PDF member
 	double MW, MZ, GF;	 // EW input parameters 
 };
-
 
 class ReadInput{
 	private :

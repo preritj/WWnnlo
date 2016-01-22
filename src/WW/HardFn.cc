@@ -1,7 +1,8 @@
 #include <const.h>
 #include <math.h>
-#include "flav.h"
+#include "flavor.h"
 
+/*
 //one-loop hard function
 //----------------------------------------------------------
 flav H1(double M, double mu){
@@ -23,4 +24,4 @@ flav H1reg(double M){
 //----------------------------------------------------------
 
 //two-loop hard function
-
+*/

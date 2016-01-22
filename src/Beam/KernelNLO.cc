@@ -5,7 +5,6 @@
 #include <vector>
 #include <algorithm>
 #include <const.h>
-#include <functions.h>
 #include <Beam.h>
 #include <misc.h>
 

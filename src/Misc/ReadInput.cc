@@ -5,7 +5,7 @@
 #include <vector>
 #include <algorithm>
 #include <const.h>
-#include <functions.h>
+#include <PDF.h>
 #include <Beam.h>
 #include <input.h>
 
@@ -32,13 +32,15 @@ ReadInput::ReadInput(){
 	}
 	int i = 0;
 	input.ECM = atof(input_list[i++].c_str()) ;
-	input.PDFname = input_list[i++].c_str();
-	input.mem = (int)(atof(input_list[i++].c_str())+0.5) ;
+	const char* PDFname = input_list[i++].c_str();
+	const int mem = (int)(atof(input_list[i++].c_str())+0.5) ;
 	input.Nf = atof(input_list[i++].c_str()) ;
 	input.pTveto = atof(input_list[i++].c_str()) ;
-	input.R = atof(input_list[i].c_str()) ;
-	input.MW = atof(input_list[i].c_str()) ;
-	input.MZ = atof(input_list[i].c_str()) ;
+	input.R = atof(input_list[i++].c_str()) ;
+	input.MW = atof(input_list[i++].c_str()) ;
+	input.MZ = atof(input_list[i++].c_str()) ;
 	input.GF = atof(input_list[i].c_str()) ;
+	// Initialize PDF	
+	pdfini_(PDFname, &mem);
 }
 
