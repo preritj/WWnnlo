@@ -12,6 +12,8 @@
 #include <misc.h>
 
 using namespace std;
+using namespace smPara;
+using namespace beamPara;
 
 double integrand_z(double x, void* para_ptr){
 	double Jac = 1.0 ;  // Take care of Jacobian in the integrals

@@ -15,13 +15,17 @@ const double Euler = - gsl_sf_psi(1.0) ;
 const double pbarn = 3.894e8 ;
 
 // SM paraneters
-extern int Nf;
-extern double MW, MW2, MZ, MZ2 ;
-extern double SW, SW2, CW, CW2 ;
-extern double GF, alpha, alpha2 ;
+namespace smPara {
+extern const int Nf;
+extern const double MW, MW2, MZ, MZ2 ;
+extern const double SW, SW2, CW, CW2 ;
+extern const double GF, alpha, alpha2 ;
+}
 
 // Beam parameters
-extern double ECM, R, pTveto ;
+namespace beamPara{
+extern const double ECM, R, pTveto ;
+}
 
 ////////////////////////////////////////////
 #endif

@@ -12,10 +12,6 @@
 
 using namespace std;
 
-int Nf;
-double MW, MZ, GF ;
-double pTveto, R, ECM;
-
 ReadInput::ReadInput(){
 	// Read input 
 	vector<string> input_list ;
@@ -45,7 +41,6 @@ ReadInput::ReadInput(){
 	MW = atof(input_list[i++].c_str()) ;
 	MZ = atof(input_list[i++].c_str()) ;
 	GF = atof(input_list[i].c_str()) ;
-	SMinit();
 	// Initialize PDF	
 	pdfini_(PDFname, &mem);
 }

@@ -2,6 +2,8 @@
 #include <WW.h>
 #include <iostream>
 
+using namespace smPara;
+
 void WW::set_Mandelstam(double s_, double t_){
 	double u_ = 2*MW2 -s_ - t_ ;
 	set_Mandelstam(s_,t_,u_) ;

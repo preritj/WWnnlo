@@ -11,6 +11,8 @@
 #include <misc.h>
 
 using namespace std;
+using namespace smPara;
+using namespace beamPara;
 
 //-----------------------------------------------------------------
 // LO product of Beam functions

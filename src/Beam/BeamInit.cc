@@ -10,6 +10,7 @@
 #include <input.h>
 
 using namespace std;
+using namespace beamPara;
 
 Beam::Beam(){
 	para.mu= pTveto; // default scale = pT veto

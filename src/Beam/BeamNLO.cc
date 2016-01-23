@@ -10,6 +10,8 @@
 #include <misc.h>
 
 using namespace std;
+using namespace smPara;
+using namespace beamPara;
 
 //-----------------------------------------------------------------
 // NLO product of Beam functions

@@ -1,6 +1,8 @@
 #include <const.h>
 #include <WW.h>
 
+using namespace smPara;
+
 double WW::F0(){
 	return
 	(16*s)/MW2 + 16*(0.25 + (MW2*MW2)/(t*t))*(-1 + (t*u)/(MW2*MW2)) ;

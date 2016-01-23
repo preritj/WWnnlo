@@ -15,6 +15,8 @@
 #include <const.h>
 
 using namespace std;
+using namespace smPara;
+using namespace beamPara;
 
 
 int main (void)
@@ -27,7 +29,6 @@ int main (void)
 	// User code goes here
 	//------------------------------------------------------- 
 	double M = 500. ;
-	ReadInput input;
 	Beam B ;
 	cout<<Nf << " " << MW << " "<< MW2<< " " << alpha<< " " << SW << endl;
 	cout << "Invariant mass of lepton pair " << M << endl ;
