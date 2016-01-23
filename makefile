@@ -12,6 +12,7 @@ VPATH = $(SDIR)/User  	: \
 		$(SDIR)/PDF   	: \
 		$(SDIR)/Beam  	: \
 		$(SDIR)/Hard  	: \
+		$(SDIR)/RG  	: \
 		$(SDIR)/Misc  	: \
 		$(SDIR)/include : 
 		 
@@ -41,10 +42,13 @@ integration.o
 
 HARDfiles= \
 HardInit.o \
+
+RGfiles= \
 anom_dim.o
 
 MISCfiles= \
 ReadInput.o \
+SMinit.o \
 timer.o 
 
 
@@ -61,6 +65,7 @@ misc.h
 ALLfiles = $(USERfiles) \
 		   $(BEAMfiles) \
 		   $(HARDfiles) \
+		   $(RGfiles) \
 		   $(PDFfiles) \
            $(MISCfiles) 
 
@@ -77,7 +82,7 @@ DY :  $(OBJ) $(patsubst %,$(ODIR)/%, $(DYfiles))
 	g++ -o $@ $^  $(CFLAGS) $(LDFLAGS)
 	mv DY bin/ 	  
 
-beam:  $(OBJ)
+beam:  $(OBJ) $(DEPS)
 	g++ -o $@ $^  $(CFLAGS) $(LDFLAGS)
 	mv beam bin/ 
 

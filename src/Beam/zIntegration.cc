@@ -17,14 +17,14 @@ double integrand_z(double x, void* para_ptr){
 	double Jac = 1.0 ;  // Take care of Jacobian in the integrals
 	zPara para = *(zPara*) para_ptr ;
 	double tau = para.tau; double mu = para.mu; double Y=para.Y; 
-    double pTveto = para.pTveto ; double Lp = 2*log(mu/pTveto) ;
+    double Lp = 2*log(mu/pTveto) ;
 	double x1 = para.tau*exp(Y); double x2 = para.tau*exp(-Y) ; 
 
 	vector<int> flav; flav.clear();
 	if (para.flavor == 'u') {flav.push_back(2); flav.push_back(4);} 
     else if (para.flavor == 'd') {
 		flav.push_back(1); flav.push_back(3);
-		if (para.Nf == 5) flav.push_back(5); }
+		if (Nf == 5) flav.push_back(5); }
 	else {cout << "Wrong flavor type. Aborting..." << endl; abort();}
 	
 	double z_min = 0.;

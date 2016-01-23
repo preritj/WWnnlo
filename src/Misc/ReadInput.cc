@@ -7,9 +7,14 @@
 #include <const.h>
 #include <PDF.h>
 #include <Beam.h>
+#include <const.h>
 #include <input.h>
 
 using namespace std;
+
+int Nf;
+double MW, MZ, GF ;
+double pTveto, R, ECM;
 
 ReadInput::ReadInput(){
 	// Read input 
@@ -31,16 +36,19 @@ ReadInput::ReadInput(){
 		}
 	}
 	int i = 0;
-	input.ECM = atof(input_list[i++].c_str()) ;
+	ECM = atof(input_list[i++].c_str()) ;
 	const char* PDFname = input_list[i++].c_str();
 	const int mem = (int)(atof(input_list[i++].c_str())+0.5) ;
-	input.Nf = atof(input_list[i++].c_str()) ;
-	input.pTveto = atof(input_list[i++].c_str()) ;
-	input.R = atof(input_list[i++].c_str()) ;
-	input.MW = atof(input_list[i++].c_str()) ;
-	input.MZ = atof(input_list[i++].c_str()) ;
-	input.GF = atof(input_list[i].c_str()) ;
+	Nf = atof(input_list[i++].c_str()) ;
+	pTveto = atof(input_list[i++].c_str()) ;
+	R = atof(input_list[i++].c_str()) ;
+	MW = atof(input_list[i++].c_str()) ;
+	MZ = atof(input_list[i++].c_str()) ;
+	GF = atof(input_list[i].c_str()) ;
+	SMinit();
 	// Initialize PDF	
 	pdfini_(PDFname, &mem);
 }
+
+
 

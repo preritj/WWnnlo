@@ -1,3 +1,4 @@
+#include <const.h>
 #include <WW.h>
 
 double WW::F0(){

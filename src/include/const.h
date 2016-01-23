@@ -14,13 +14,14 @@ const double zeta3 = gsl_sf_zeta_int(3), zeta5 = gsl_sf_zeta_int(5) ;
 const double Euler = - gsl_sf_psi(1.0) ;
 const double pbarn = 3.894e8 ;
 
-// derived constants from input parameters
-const double alpha = 1.0/130 ;
-//double MW2 = MW*MW; 
-//const double MW2 = MW*MW ;
-//const double MZ2 = MZ*MZ ;
-//const double SW2 = 1.-MW2/MZ2, SW = sqrt(SW2) ;
-//const double CW2 = 1.-SW2, CW = sqrt(CW2) ;
+// SM paraneters
+extern int Nf;
+extern double MW, MW2, MZ, MZ2 ;
+extern double SW, SW2, CW, CW2 ;
+extern double GF, alpha, alpha2 ;
+
+// Beam parameters
+extern double ECM, R, pTveto ;
 
 ////////////////////////////////////////////
 #endif

@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <const.h>
 #include <PDF.h>
+#include <const.h>
 #include <Beam.h>
 #include <misc.h>
 
@@ -15,7 +16,7 @@ using namespace std;
 // LO product of Beam functions
 flav Beam::lo(double M_in){
 	para.M = M_in;
-	para.tau = M_in/para.ECM ;
+	para.tau = M_in/ECM ;
 	flav result, error;
 
 	// up-type 
@@ -39,7 +40,7 @@ double integrand_rap_lo(double x, void* para_ptr)
 	if (para.flavor == 'u') {flav.push_back(2); flav.push_back(4);} 
     else if (para.flavor == 'd') {
 		flav.push_back(1); flav.push_back(3);
-		if (para.Nf == 5) flav.push_back(5); }
+		if (Nf == 5) flav.push_back(5); }
 	else {cout << "Wrong flavor type. Aborting..." << endl; abort();}
 	
 	double Y_min = log(tau) ;

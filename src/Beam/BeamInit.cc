@@ -11,11 +11,7 @@
 
 using namespace std;
 
-Beam::Beam(InputPara input){
-	para.ECM = input.ECM ;
-	para.Nf = input.Nf ;
-	para.pTveto = input.pTveto ;
-	para.R = input.R;
-	para.mu= input.pTveto; // default scale = pT veto
+Beam::Beam(){
+	para.mu= pTveto; // default scale = pT veto
 }
 

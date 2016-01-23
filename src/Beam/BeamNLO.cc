@@ -15,7 +15,7 @@ using namespace std;
 // NLO product of Beam functions
 flav Beam::nlo(double M_in){
 	para.M = M_in;
-	para.tau = M_in/para.ECM ;
+	para.tau = M_in/ECM ;
 	flav result, error;
 
 	// up-type 
@@ -33,14 +33,14 @@ double integrand_rap_nlo(double x, void* para_ptr)
 {
 	double Jac = 1.0 ;  // Take care of Jacobian in the integrals
 	BeamPara para = *(BeamPara*) para_ptr ;
-	double tau = para.tau; double mu = para.mu ; double pTveto=para.pTveto;
+	double tau = para.tau; double mu = para.mu ; 
 	double Lp = 2*log(mu/pTveto) ;
 
 	vector<int> flav; flav.clear();
 	if (para.flavor == 'u') {flav.push_back(2); flav.push_back(4);} 
     else if (para.flavor == 'd') {
 		flav.push_back(1); flav.push_back(3);
-		if (para.Nf == 5) flav.push_back(5); }
+		if (Nf == 5) flav.push_back(5); }
 	else {cout << "Wrong flavor type. Aborting..." << endl; abort();}
 	
 	double Y_min = log(tau) ;
@@ -69,8 +69,8 @@ double integrand_rap_nlo(double x, void* para_ptr)
 	// Contribution from remaining z dependent integration 
 	double result, error ;
 	zPara zpara;
-	zpara.mu = mu; zpara.tau = tau; zpara.pTveto = pTveto;
-	zpara.Y = Y; zpara.Nf = para.Nf ; zpara.flavor = para.flavor ;
+	zpara.mu = mu; zpara.tau = tau; 
+	zpara.Y = Y; zpara.flavor = para.flavor ;
 
 	zpara.flag = 1; 
 	NIntegrate(0., 1., &zpara, integrand_z, result, error, 0);
