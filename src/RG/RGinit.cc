@@ -1,7 +1,10 @@
 #include "const.h"
 #include "math.h"
 
-void anom_dim(int Nf){
+using namespace constants;
+using smPara::Nf;
+
+namespace RGpara {
 	// constants that appear in beta function
 	const double B0 = (11*CA/3 - 4*TF*Nf/3) ;
 	const double B1 = (34*pow(CA,2)/3 - 20*CA*TF*Nf/3 - 4*CF*TF*Nf) ;

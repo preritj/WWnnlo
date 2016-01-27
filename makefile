@@ -12,6 +12,8 @@ VPATH = $(SDIR)/User  	: \
 		$(SDIR)/PDF   	: \
 		$(SDIR)/Beam  	: \
 		$(SDIR)/Hard  	: \
+		$(SDIR)/Process : \
+		$(SDIR)/Xsection: \
 		$(SDIR)/RG  	: \
 		$(SDIR)/Misc  	: \
 		$(SDIR)/include : 
@@ -30,25 +32,33 @@ HardFn.o
 WWfiles= \
 WW.o \
 LO.o \
-HardFn.o 
+NLO.o 
 
 BEAMfiles= \
 BeamInit.o \
 BeamLO.o \
 BeamNLO.o \
 KernelNLO.o \
-zIntegration.o \
-integration.o 
+zIntegration.o 
 
 HARDfiles= \
-HardInit.o \
+costIntegral.o \
+HardLO.o \
+HardNLO.o 
+
+XSECfiles= \
+Xsection.o 
+
+PROCfiles = \
+process.o
 
 RGfiles= \
-anom_dim.o
+RGinit.o
 
 MISCfiles= \
 ReadInput.o \
-SMinit.o \
+init.o \
+integration.o \
 timer.o 
 
 
@@ -59,12 +69,15 @@ dist.h \
 flavor.h \
 PDF.h \
 Beam.h \
+process.h \
 misc.h
 
 
 ALLfiles = $(USERfiles) \
 		   $(BEAMfiles) \
 		   $(HARDfiles) \
+		   $(PROCfiles) \
+		   $(XSECfiles) \
 		   $(RGfiles) \
 		   $(PDFfiles) \
            $(MISCfiles) 

@@ -1,15 +1,21 @@
 #ifndef WW_H
 #define WW_H
 
-#include <input.h>
-#include <Hard.h>
+#include <const.h>
+#include <process.h>
 
-class WW : public Hard{
+using namespace smPara;
+
+class pp2WW : public process{
 	private :
-		double s, t, u ;
+		flav T3, Q, PosUp ;
+		flav CQtt ;	
+		double coup ;
 	public :
-		double F0(); double J0(); double K0() ;
-		void set_Mandelstam(double, double);
-		void set_Mandelstam(double, double, double);
+		pp2WW() ;
+		flav CQst(), CQss() ;
+		double F0(), J0(), K0() ;
+		double F1(), J1(), K1() ;
+		void calc_lo(), calc_nlo() ; //Calculate H0 and H1 
 };
 #endif

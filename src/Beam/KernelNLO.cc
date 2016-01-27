@@ -9,6 +9,7 @@
 #include <misc.h>
 
 using namespace std;
+using namespace constants;
 
 Dist operator+(const Dist& d1, const Dist& d2){
 	Dist d;

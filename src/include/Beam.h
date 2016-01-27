@@ -28,6 +28,7 @@ class Beam{
 		Beam() ; 
 		void set_mu(double);
 		flav lo(double), nlo(double) ;
+		flav lo(double, double), nlo(double, double) ;
 };
 
 double integrand_rap_lo(double, void*);
@@ -35,3 +36,4 @@ double integrand_rap_nlo(double, void*);
 double integrand_z(double, void*);
 
 #endif
+

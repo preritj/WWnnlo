@@ -2,6 +2,8 @@
 #include <input.h>
 #include <const.h>
 
+using namespace constants;
+
 ReadInput input;
 // input SM parameters
 namespace smPara{

@@ -16,9 +16,9 @@ using namespace beamPara;
 
 //-----------------------------------------------------------------
 // LO product of Beam functions
-flav Beam::lo(double M_in){
-	para.M = M_in;
-	para.tau = M_in/ECM ;
+flav Beam::lo(double M_){
+	para.M = M_;
+	para.tau = M_/ECM ;
 	flav result, error;
 
 	// up-type 
