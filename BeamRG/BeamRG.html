@@ -223,7 +223,7 @@ div#notebook {
 <span class="n">Eqs</span><span class="o">=</span><span class="p">{}</span>
 <span class="n">Eqs</span><span class="p">[</span><span class="n">J1</span><span class="p">]</span>    <span class="o">=</span> <span class="n">d1</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">g0</span> <span class="o">+</span> <span class="n">G0</span><span class="o">*</span><span class="n">LT</span>
 <span class="n">Eqs</span><span class="p">[</span><span class="n">J2</span><span class="p">]</span>    <span class="o">=</span> <span class="n">d2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">g1</span> <span class="o">+</span> <span class="p">(</span><span class="n">b0</span><span class="o">*</span><span class="n">d1</span> <span class="o">+</span> <span class="n">G1</span><span class="p">)</span><span class="o">*</span><span class="n">LT</span> <span class="o">+</span> <span class="n">b0</span><span class="o">*</span><span class="n">G0</span><span class="o">*</span><span class="n">LT</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span>
-<span class="n">Eqs</span><span class="p">[</span><span class="n">Iqq1</span><span class="p">]</span>  <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">d1</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="n">g0</span><span class="p">)</span><span class="o">*</span><span class="n">LT</span> <span class="o">+</span> <span class="n">G0</span><span class="o">*</span><span class="n">LT</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">4</span> <span class="o">-</span> <span class="n">Pqq1</span><span class="o">*</span><span class="n">LT</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Rqq1</span>
+<span class="n">Eqs</span><span class="p">[</span><span class="n">Iqq1</span><span class="p">]</span>  <span class="o">=</span> <span class="o">-</span><span class="p">((</span><span class="n">d1</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="n">g0</span><span class="p">)</span><span class="o">*</span><span class="n">LT</span> <span class="o">+</span> <span class="n">G0</span><span class="o">*</span><span class="n">LT</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="n">Pqq1</span><span class="o">*</span><span class="n">LT</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Rqq1</span>
 <span class="n">Eqs</span><span class="p">[</span><span class="n">Iqg1</span><span class="p">]</span>  <span class="o">=</span> <span class="o">-</span><span class="n">Pqg1</span><span class="o">*</span><span class="n">LT</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Rqg1</span>
 <span class="n">Eqs</span>
 </pre></div>
@@ -240,7 +240,7 @@ div#notebook {
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\left \{ J_{1} : \Gamma_{0} L_{\perp} + d_{1} + 2 \gamma_{0}, \quad J_{2} : \frac{\Gamma_{0} \beta_{0}}{2} L_{\perp}^{2} + L_{\perp} \left(\Gamma_{1} + \beta_{0} d_{1}\right) + d_{2} + 2 \gamma_{1}, \quad {I^{(1)}_{qg}} : - \frac{L_{\perp} {P^{(1)}_{qg}}}{2} + {R^{(1)}_{qg}}, \quad {I^{(1)}_{qq}} : \frac{\Gamma_{0} L_{\perp}^{2}}{4} - \frac{L_{\perp} {P^{(1)}_{qq}}}{2} + L_{\perp} \left(- \frac{d_{1}}{2} - \gamma_{0}\right) + {R^{(1)}_{qq}}\right \}$$
+$$\left \{ J_{1} : \Gamma_{0} L_{\perp} + d_{1} + 2 \gamma_{0}, \quad J_{2} : \frac{\Gamma_{0} \beta_{0}}{2} L_{\perp}^{2} + L_{\perp} \left(\Gamma_{1} + \beta_{0} d_{1}\right) + d_{2} + 2 \gamma_{1}, \quad {I^{(1)}_{qg}} : - \frac{L_{\perp} {P^{(1)}_{qg}}}{2} + {R^{(1)}_{qg}}, \quad {I^{(1)}_{qq}} : - \frac{\Gamma_{0} L_{\perp}^{2}}{4} - \frac{L_{\perp} {P^{(1)}_{qq}}}{2} - L_{\perp} \left(\frac{d_{1}}{2} + \gamma_{0}\right) + {R^{(1)}_{qq}}\right \}$$
 </div>
 
 </div>
@@ -334,7 +334,7 @@ $$- J_{2} - {I^{(1)}_{qg}} {P^{(1)}_{gq}} - {I^{(1)}_{qq}} {P^{(1)}_{qq}} - {I^{
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\left [ - \frac{\Gamma_{0}^{2}}{2}, \quad \frac{\Gamma_{0}}{3} \left(d_{1} + 2 \gamma_{0} + {P^{(1)}_{qq}}\right), \quad - \frac{1}{2} \left(2 \Gamma_{0} {R^{(1)}_{qq}} + 2 \Gamma_{1} + 4 \beta_{0} d_{1} + 4 \beta_{0} \gamma_{0} + 2 \beta_{0} {P^{(1)}_{qq}} - d_{1}^{2} - 4 d_{1} \gamma_{0} - 2 d_{1} {P^{(1)}_{qq}} - 4 \gamma_{0}^{2} - 4 \gamma_{0} {P^{(1)}_{qq}} - {P^{(1)}_{gq}} {P^{(1)}_{qg}} - {P^{(1)}_{qq}}^{2}\right), \quad 2 \beta_{0} {R^{(1)}_{qq}} - d_{1} {R^{(1)}_{qq}} - d_{2} - 2 \gamma_{0} {R^{(1)}_{qq}} - 2 \gamma_{1} - {P^{(1)}_{gq}} {R^{(1)}_{qg}} - {P^{(1)}_{qq}} {R^{(1)}_{qq}} - {P^{(2)}_{qq}}, \quad {R^{(2)}_{qq}}\right ]$$
+$$\left [ \frac{\Gamma_{0}^{2}}{2}, \quad - \frac{\Gamma_{0}}{3} \left(4 \beta_{0} - 3 d_{1} - 6 \gamma_{0} - 3 {P^{(1)}_{qq}}\right), \quad - \frac{1}{2} \left(2 \Gamma_{0} {R^{(1)}_{qq}} + 2 \Gamma_{1} + 4 \beta_{0} d_{1} + 4 \beta_{0} \gamma_{0} + 2 \beta_{0} {P^{(1)}_{qq}} - d_{1}^{2} - 4 d_{1} \gamma_{0} - 2 d_{1} {P^{(1)}_{qq}} - 4 \gamma_{0}^{2} - 4 \gamma_{0} {P^{(1)}_{qq}} - {P^{(1)}_{gq}} {P^{(1)}_{qg}} - {P^{(1)}_{qq}}^{2}\right), \quad 2 \beta_{0} {R^{(1)}_{qq}} - d_{1} {R^{(1)}_{qq}} - d_{2} - 2 \gamma_{0} {R^{(1)}_{qq}} - 2 \gamma_{1} - {P^{(1)}_{gq}} {R^{(1)}_{qg}} - {P^{(1)}_{qq}} {R^{(1)}_{qq}} - {P^{(2)}_{qq}}, \quad {R^{(2)}_{qq}}\right ]$$
 </div>
 
 </div>
@@ -428,7 +428,7 @@ $$- {I^{(1)}_{qg}} {P^{(1)}_{gg}} - {I^{(1)}_{qg}} \left(J_{1} - 2 \beta_{0}\rig
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\left [ \frac{\Gamma_{0} {P^{(1)}_{qg}}}{3}, \quad - \frac{1}{2} \left(2 \Gamma_{0} {R^{(1)}_{qg}} + 2 \beta_{0} {P^{(1)}_{qg}} - 2 d_{1} {P^{(1)}_{qg}} - 4 \gamma_{0} {P^{(1)}_{qg}} - {P^{(1)}_{gg}} {P^{(1)}_{qg}} - {P^{(1)}_{qg}} {P^{(1)}_{qq}}\right), \quad 2 \beta_{0} {R^{(1)}_{qg}} - d_{1} {R^{(1)}_{qg}} - 2 \gamma_{0} {R^{(1)}_{qg}} - {P^{(1)}_{gg}} {R^{(1)}_{qg}} - {P^{(1)}_{qg}} {R^{(1)}_{qq}} - {P^{(2)}_{qg}}, \quad {R^{(2)}_{qg}}\right ]$$
+$$\left [ \Gamma_{0} {P^{(1)}_{qg}}, \quad - \frac{1}{2} \left(2 \Gamma_{0} {R^{(1)}_{qg}} + 2 \beta_{0} {P^{(1)}_{qg}} - 2 d_{1} {P^{(1)}_{qg}} - 4 \gamma_{0} {P^{(1)}_{qg}} - {P^{(1)}_{gg}} {P^{(1)}_{qg}} - {P^{(1)}_{qg}} {P^{(1)}_{qq}}\right), \quad 2 \beta_{0} {R^{(1)}_{qg}} - d_{1} {R^{(1)}_{qg}} - 2 \gamma_{0} {R^{(1)}_{qg}} - {P^{(1)}_{gg}} {R^{(1)}_{qg}} - {P^{(1)}_{qg}} {R^{(1)}_{qq}} - {P^{(2)}_{qg}}, \quad {R^{(2)}_{qg}}\right ]$$
 </div>
 
 </div>
