@@ -394,6 +394,7 @@ $$\left \{ \Gamma_{0} : 5.33333333333333, \quad \Gamma_{1} : 36.8435913423382, \
                 <span class="o">+</span> <span class="n">TF</span><span class="o">*</span><span class="n">Nf</span><span class="o">*</span><span class="p">(</span><span class="n">cLf</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">+</span><span class="n">c0f</span><span class="o">+</span><span class="n">c2f</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">c4f</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">4</span><span class="o">++</span><span class="n">c6f</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">JVAnomDim</span><span class="p">[</span><span class="n">d1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">*</span><span class="n">CF</span>
 <span class="n">JVAnomDim</span><span class="p">[</span><span class="n">d2</span><span class="p">]</span> <span class="o">=</span> <span class="n">d2F</span> <span class="o">-</span><span class="mi">32</span><span class="o">*</span><span class="n">CF</span><span class="o">*</span><span class="n">fF</span>
+<span class="n">JVAnomDim</span><span class="p">[</span><span class="n">d3</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">64</span><span class="o">*</span><span class="n">CF</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mf">1.803136</span><span class="o">*</span><span class="n">CA</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.589237</span><span class="o">*</span><span class="n">Nf</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="mf">0.36982</span><span class="o">*</span><span class="n">CF</span><span class="o">*</span><span class="n">Nf</span><span class="o">-</span><span class="mf">0.05893</span><span class="o">*</span><span class="n">Nf</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">JVAnomDim</span>
 </pre></div>
 
@@ -409,7 +410,7 @@ $$\left \{ \Gamma_{0} : 5.33333333333333, \quad \Gamma_{1} : 36.8435913423382, \
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\left \{ c^{A}_{0} : \frac{\zeta_{3}}{2} - \frac{805}{216} + \frac{11}{6} \log^{2}{\left (2 \right )} + \frac{35}{18} \log{\left (2 \right )} + \frac{11 \pi^{2}}{72}, \quad c^{A}_{2} : \frac{1429}{172800} + \frac{13}{180} \log{\left (2 \right )} + \frac{\pi^{2}}{48}, \quad c^{A}_{4} : - \frac{9383279}{406425600} - \frac{\pi^{2}}{3456} + \frac{587}{120960} \log{\left (2 \right )}, \quad c^{A}_{6} : - \frac{23}{67200} \log{\left (2 \right )} + \frac{74801417}{97542144000}, \quad c^{A}_{L} : - \frac{\pi^{2}}{6} - \frac{11}{6} \log{\left (2 \right )} + \frac{131}{72}, \quad c^{f}_{0} : - \frac{8}{9} \log{\left (2 \right )} - \frac{\pi^{2}}{18} - \frac{2}{3} \log^{2}{\left (2 \right )} + \frac{157}{108}, \quad c^{f}_{2} : - \frac{7}{360} \log{\left (2 \right )} + \frac{3071}{86400}, \quad c^{f}_{4} : - \frac{168401}{101606400} + \frac{53}{30240} \log{\left (2 \right )}, \quad c^{f}_{6} : - \frac{11}{100800} \log{\left (2 \right )} + \frac{7001023}{48771072000}, \quad c^{f}_{L} : - \frac{23}{36} + \frac{2}{3} \log{\left (2 \right )}, \quad d^{F}_{2} : C_{F} \left(C_{A} \left(- 28 \zeta_{3} + \frac{808}{27}\right) - \frac{224 T_{F}}{27} n_{f}\right), \quad d_{1} : 0, \quad d_{2} : - 32 C_{F} {f_{F}(R)} + d^{F}_{2}, \quad {f_{F}(R)} : C_{A} \left(R^{6} c^{A}_{6} + R^{4} c^{A}_{4} + R^{2} c^{A}_{2} + c^{A}_{0} + c^{A}_{L} \log{\left (R \right )}\right) + C_{F} \left(\frac{R^{4}}{16} - \frac{\pi^{2} R^{2}}{12}\right) + T_{F} n_{f} \left(R^{6} c^{f}_{6} + R^{4} c^{f}_{4} + R^{2} c^{f}_{2} + c^{f}_{0} + c^{f}_{L} \log{\left (R \right )}\right)\right \}$$
+$$\left \{ c^{A}_{0} : \frac{\zeta_{3}}{2} - \frac{805}{216} + \frac{11}{6} \log^{2}{\left (2 \right )} + \frac{35}{18} \log{\left (2 \right )} + \frac{11 \pi^{2}}{72}, \quad c^{A}_{2} : \frac{1429}{172800} + \frac{13}{180} \log{\left (2 \right )} + \frac{\pi^{2}}{48}, \quad c^{A}_{4} : - \frac{9383279}{406425600} - \frac{\pi^{2}}{3456} + \frac{587}{120960} \log{\left (2 \right )}, \quad c^{A}_{6} : - \frac{23}{67200} \log{\left (2 \right )} + \frac{74801417}{97542144000}, \quad c^{A}_{L} : - \frac{\pi^{2}}{6} - \frac{11}{6} \log{\left (2 \right )} + \frac{131}{72}, \quad c^{f}_{0} : - \frac{8}{9} \log{\left (2 \right )} - \frac{\pi^{2}}{18} - \frac{2}{3} \log^{2}{\left (2 \right )} + \frac{157}{108}, \quad c^{f}_{2} : - \frac{7}{360} \log{\left (2 \right )} + \frac{3071}{86400}, \quad c^{f}_{4} : - \frac{168401}{101606400} + \frac{53}{30240} \log{\left (2 \right )}, \quad c^{f}_{6} : - \frac{11}{100800} \log{\left (2 \right )} + \frac{7001023}{48771072000}, \quad c^{f}_{L} : - \frac{23}{36} + \frac{2}{3} \log{\left (2 \right )}, \quad d^{F}_{2} : C_{F} \left(C_{A} \left(- 28 \zeta_{3} + \frac{808}{27}\right) - \frac{224 T_{F}}{27} n_{f}\right), \quad d_{1} : 0, \quad d_{2} : - 32 C_{F} {f_{F}(R)} + d^{F}_{2}, \quad d_{3} : - 64 C_{F} \left(1.803136 C_{A}^{2} - 0.589237 C_{A} n_{f} + 0.36982 C_{F} n_{f} - 0.05893 n_{f}^{2}\right) \log^{2}{\left (R \right )}, \quad {f_{F}(R)} : C_{A} \left(R^{6} c^{A}_{6} + R^{4} c^{A}_{4} + R^{2} c^{A}_{2} + c^{A}_{0} + c^{A}_{L} \log{\left (R \right )}\right) + C_{F} \left(\frac{R^{4}}{16} - \frac{\pi^{2} R^{2}}{12}\right) + T_{F} n_{f} \left(R^{6} c^{f}_{6} + R^{4} c^{f}_{4} + R^{2} c^{f}_{2} + c^{f}_{0} + c^{f}_{L} \log{\left (R \right )}\right)\right \}$$
 </div>
 
 </div>
@@ -442,7 +443,7 @@ $$\left \{ c^{A}_{0} : \frac{\zeta_{3}}{2} - \frac{805}{216} + \frac{11}{6} \log
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\left \{ c^{A}_{0} : 0.610649537610971, \quad c^{A}_{2} : 0.263947063989061, \quad c^{A}_{4} : -0.0225793759802683, \quad c^{A}_{6} : 0.000529624672827506, \quad c^{A}_{L} : -1.09625945343035, \quad c^{f}_{0} : -0.0310404883555686, \quad c^{f}_{2} : 0.0220661196372603, \quad c^{f}_{4} : -0.000442544466548219, \quad c^{f}_{6} : 6.79076184697486 \cdot 10^{-5}, \quad c^{f}_{L} : -0.176790768515592, \quad d^{F}_{2} : -37.0501262402943, \quad d_{1} : 0, \quad d_{2} : - 0.0735867415646726 R^{6} - 0.627631635602436 R^{4} + 11.121035946259 R^{2} + 155.407355619082 \log{\left (R \right )} - 112.564478714823, \quad {f_{F}(R)} : 0.00172468925542201 R^{6} + 0.0147101164594321 R^{4} - 0.260649279990446 R^{2} - 3.64235989732223 \log{\left (R \right )} + 1.76986763612177\right \}$$
+$$\left \{ c^{A}_{0} : 0.610649537610971, \quad c^{A}_{2} : 0.263947063989061, \quad c^{A}_{4} : -0.0225793759802683, \quad c^{A}_{6} : 0.000529624672827506, \quad c^{A}_{L} : -1.09625945343035, \quad c^{f}_{0} : -0.0310404883555686, \quad c^{f}_{2} : 0.0220661196372603, \quad c^{f}_{4} : -0.000442544466548219, \quad c^{f}_{6} : 6.79076184697486 \cdot 10^{-5}, \quad c^{f}_{L} : -0.176790768515592, \quad d^{F}_{2} : -37.0501262402943, \quad d_{1} : 0, \quad d_{2} : - 0.0735867415646726 R^{6} - 0.627631635602436 R^{4} + 11.121035946259 R^{2} + 155.407355619082 \log{\left (R \right )} - 112.564478714823, \quad d_{3} : - 869.279857777778 \log^{2}{\left (R \right )}, \quad {f_{F}(R)} : 0.00172468925542201 R^{6} + 0.0147101164594321 R^{4} - 0.260649279990446 R^{2} - 3.64235989732223 \log{\left (R \right )} + 1.76986763612177\right \}$$
 </div>
 
 </div>
@@ -475,7 +476,7 @@ $$\left \{ c^{A}_{0} : 0.610649537610971, \quad c^{A}_{2} : 0.263947063989061, \
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\left \{ c^{A}_{0} : 0.610649537610971, \quad c^{A}_{2} : 0.263947063989061, \quad c^{A}_{4} : -0.0225793759802683, \quad c^{A}_{6} : 0.000529624672827506, \quad c^{A}_{L} : -1.09625945343035, \quad c^{f}_{0} : -0.0310404883555686, \quad c^{f}_{2} : 0.0220661196372603, \quad c^{f}_{4} : -0.000442544466548219, \quad c^{f}_{6} : 6.79076184697486 \cdot 10^{-5}, \quad c^{f}_{L} : -0.176790768515592, \quad d^{F}_{2} : -42.5809904378252, \quad d_{1} : 0, \quad d_{2} : - 0.0750354374253606 R^{6} - 0.618190686982741 R^{4} + 10.6502920606641 R^{2} + 159.178892014081 \log{\left (R \right )} - 117.433145827435, \quad {f_{F}(R)} : 0.00175864306465689 R^{6} + 0.014488844226158 R^{4} - 0.249616220171816 R^{2} - 3.73075528158003 \log{\left (R \right )} + 1.75434739194399\right \}$$
+$$\left \{ c^{A}_{0} : 0.610649537610971, \quad c^{A}_{2} : 0.263947063989061, \quad c^{A}_{4} : -0.0225793759802683, \quad c^{A}_{6} : 0.000529624672827506, \quad c^{A}_{L} : -1.09625945343035, \quad c^{f}_{0} : -0.0310404883555686, \quad c^{f}_{2} : 0.0220661196372603, \quad c^{f}_{4} : -0.000442544466548219, \quad c^{f}_{6} : 6.79076184697486 \cdot 10^{-5}, \quad c^{f}_{L} : -0.176790768515592, \quad d^{F}_{2} : -42.5809904378252, \quad d_{1} : 0, \quad d_{2} : - 0.0750354374253606 R^{6} - 0.618190686982741 R^{4} + 10.6502920606641 R^{2} + 159.178892014081 \log{\left (R \right )} - 117.433145827435, \quad d_{3} : - 715.254243555555 \log^{2}{\left (R \right )}, \quad {f_{F}(R)} : 0.00175864306465689 R^{6} + 0.014488844226158 R^{4} - 0.249616220171816 R^{2} - 3.73075528158003 \log{\left (R \right )} + 1.75434739194399\right \}$$
 </div>
 
 </div>
@@ -793,6 +794,154 @@ $$- {I^{(1)}_{qg}} {P^{(1)}_{gQ}} - {P^{(2)}_{qQ}}$$
 
 <div class="output_latex output_subarea output_execute_result">
 $$\left [ \frac{{P^{(1)}_{gQ}} {P^{(1)}_{qg}}}{2}, \quad - {P^{(1)}_{gQ}} {R^{(1)}_{qg}} - {P^{(2)}_{qQ}}, \quad {R^{(2)}_{qQ}}\right ]$$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="RRG-term">RRG term<a class="anchor-link" href="#RRG-term">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c1"># Symbols</span>
+<span class="n">hg0</span><span class="p">,</span> <span class="n">hg1</span><span class="p">,</span> <span class="n">hg2</span><span class="p">,</span> <span class="n">hg3</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;g^(0) g^(1) g^(2) g^(3)&#39;</span><span class="p">)</span>
+<span class="n">alphas</span><span class="p">,</span> <span class="n">alfas</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;alpha_s a_s&#39;</span><span class="p">)</span>
+<span class="n">mu</span><span class="p">,</span> <span class="n">M</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;mu M&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c1"># Create dictionary for RRG exponents</span>
+<span class="n">RRG</span><span class="o">=</span><span class="p">{}</span>
+<span class="n">RRG</span><span class="p">[</span><span class="n">hg0</span><span class="p">]</span> <span class="o">=</span> <span class="n">alfas</span><span class="o">*</span><span class="n">d1</span> <span class="o">+</span> <span class="n">alfas</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">d2</span>           <span class="o">+</span> <span class="n">alfas</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="n">d3</span>
+<span class="n">RRG</span><span class="p">[</span><span class="n">hg1</span><span class="p">]</span> <span class="o">=</span> <span class="n">alfas</span><span class="o">*</span><span class="n">G0</span> <span class="o">+</span> <span class="n">alfas</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">b0</span><span class="o">*</span><span class="n">d1</span> <span class="o">+</span> <span class="n">G1</span><span class="p">)</span> <span class="o">+</span> <span class="n">alfas</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">b0</span><span class="o">*</span><span class="n">d2</span><span class="o">+</span><span class="n">b1</span><span class="o">*</span><span class="n">d1</span><span class="o">+</span><span class="n">G2</span><span class="p">)</span>
+<span class="n">RRG</span><span class="p">[</span><span class="n">hg2</span><span class="p">]</span> <span class="o">=</span>            <span class="n">alfas</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">b0</span><span class="o">*</span><span class="n">G0</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>    <span class="o">+</span> <span class="n">alfas</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">b0</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">d1</span><span class="o">+</span><span class="n">b1</span><span class="o">*</span><span class="n">G0</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="n">b0</span><span class="o">*</span><span class="n">G1</span><span class="p">)</span>
+<span class="n">RRG</span><span class="p">[</span><span class="n">hg2</span><span class="p">]</span> <span class="o">=</span>                                    <span class="n">alfas</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">b0</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">G0</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">RRG</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$\left \{ g^{(0)} : a_{s}^{3} d_{3} + a_{s}^{2} d_{2} + a_{s} d_{1}, \quad g^{(1)} : \Gamma_{0} a_{s} + a_{s}^{3} \left(\Gamma_{2} + 2 \beta_{0} d_{2} + \beta_{1} d_{1}\right) + a_{s}^{2} \left(\Gamma_{1} + \beta_{0} d_{1}\right), \quad g^{(2)} : \frac{\Gamma_{0} a_{s}^{3}}{3} \beta_{0}^{2}\right \}$$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">RRGexp</span> <span class="o">=</span> <span class="p">(</span><span class="n">mu</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">M</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">hg0</span> <span class="o">+</span> <span class="n">hg1</span><span class="o">*</span><span class="n">LT</span> <span class="o">+</span> <span class="n">hg2</span><span class="o">*</span><span class="n">LT</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">hg3</span><span class="o">*</span><span class="n">LT</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">RRG</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$\left \{ g^{(0)} : a_{s}^{3} d_{3} + a_{s}^{2} d_{2} + a_{s} d_{1}, \quad g^{(1)} : \Gamma_{0} a_{s} + a_{s}^{3} \left(\Gamma_{2} + 2 \beta_{0} d_{2} + \beta_{1} d_{1}\right) + a_{s}^{2} \left(\Gamma_{1} + \beta_{0} d_{1}\right), \quad g^{(2)} : \frac{\Gamma_{0} a_{s}^{3}}{3} \beta_{0}^{2}\right \}$$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">RRGexp</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$\left(\frac{\mu^{2}}{M^{2}}\right)^{L_{\perp}^{3} g^{(3)} + L_{\perp}^{2} g^{(2)} + L_{\perp} g^{(1)} + g^{(0)}}$$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">RRGexp</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">RRG</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">AnomDim</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">JVAnomDim</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">JVAnomDim</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">Constants</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">alfas</span> <span class="p">:</span> <span class="mf">0.118</span><span class="o">/</span><span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="p">,</span> <span class="n">LT</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">mu</span> <span class="p">:</span> <span class="mf">25.</span><span class="p">,</span> <span class="n">M</span> <span class="p">:</span> <span class="mi">500</span><span class="p">,</span> <span class="n">Nf</span> <span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="n">r</span> <span class="p">:</span> <span class="mf">0.4</span><span class="p">})</span><span class="o">.</span><span class="n">evalf</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$1.14726974894776$$
 </div>
 
 </div>
