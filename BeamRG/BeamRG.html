@@ -868,7 +868,7 @@ $$\left \{ g^{(0)} : a_{s}^{3} d_{3} + a_{s}^{2} d_{2} + a_{s} d_{1}, \quad g^{(
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">RRGexp</span> <span class="o">=</span> <span class="p">(</span><span class="n">mu</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">M</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">hg0</span> <span class="o">+</span> <span class="n">hg1</span><span class="o">*</span><span class="n">LT</span> <span class="o">+</span> <span class="n">hg2</span><span class="o">*</span><span class="n">LT</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">hg3</span><span class="o">*</span><span class="n">LT</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">RRG</span>
+<span class="n">RRGexp</span>
 </pre></div>
 
 </div>
@@ -883,7 +883,7 @@ $$\left \{ g^{(0)} : a_{s}^{3} d_{3} + a_{s}^{2} d_{2} + a_{s} d_{1}, \quad g^{(
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\left \{ g^{(0)} : a_{s}^{3} d_{3} + a_{s}^{2} d_{2} + a_{s} d_{1}, \quad g^{(1)} : \Gamma_{0} a_{s} + a_{s}^{3} \left(\Gamma_{2} + 2 \beta_{0} d_{2} + \beta_{1} d_{1}\right) + a_{s}^{2} \left(\Gamma_{1} + \beta_{0} d_{1}\right), \quad g^{(2)} : \frac{\Gamma_{0} a_{s}^{3}}{3} \beta_{0}^{2}\right \}$$
+$$\left(\frac{\mu^{2}}{M^{2}}\right)^{L_{\perp}^{3} g^{(3)} + L_{\perp}^{2} g^{(2)} + L_{\perp} g^{(1)} + g^{(0)}}$$
 </div>
 
 </div>
@@ -897,35 +897,6 @@ $$\left \{ g^{(0)} : a_{s}^{3} d_{3} + a_{s}^{2} d_{2} + a_{s} d_{1}, \quad g^{(
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">RRGexp</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$\left(\frac{\mu^{2}}{M^{2}}\right)^{L_{\perp}^{3} g^{(3)} + L_{\perp}^{2} g^{(2)} + L_{\perp} g^{(1)} + g^{(0)}}$$
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">RRGexp</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">RRG</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">AnomDim</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">JVAnomDim</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">JVAnomDim</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">Constants</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">alfas</span> <span class="p">:</span> <span class="mf">0.118</span><span class="o">/</span><span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="p">,</span> <span class="n">LT</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">mu</span> <span class="p">:</span> <span class="mf">25.</span><span class="p">,</span> <span class="n">M</span> <span class="p">:</span> <span class="mi">500</span><span class="p">,</span> <span class="n">Nf</span> <span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="n">r</span> <span class="p">:</span> <span class="mf">0.4</span><span class="p">})</span><span class="o">.</span><span class="n">evalf</span><span class="p">()</span>
 </pre></div>
 
@@ -937,7 +908,7 @@ $$\left(\frac{\mu^{2}}{M^{2}}\right)^{L_{\perp}^{3} g^{(3)} + L_{\perp}^{2} g^{(
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
 
 
 <div class="output_latex output_subarea output_execute_result">
